@@ -63,8 +63,12 @@ dependencies {
     def retrofitVersion = '2.5.0'
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
 
+    // JavaRX
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0"
 
-
+    // Reactive Streams
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:2.4.1"
 
 }
