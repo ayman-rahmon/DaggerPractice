@@ -11,13 +11,13 @@ import dagger.Provides;
 @Module
 public abstract class ViewModelFactoryModule {
 
-    // provides a dependancy without adding any logic to it
+    // provides a dependency without adding any logic to it
     @Binds
     public abstract ViewModelProvider.Factory bindViewModelFactory(ViewModelProviderFactory modelProviderFactory);
 
 
 
-    //provides a dependancy with adding some kind od logic to it...
+    //provides a dependency with adding some kind od logic to it...
     @Provides
     static ViewModelProvider.Factory bindFactory(ViewModelProviderFactory factory){
         return factory ;
