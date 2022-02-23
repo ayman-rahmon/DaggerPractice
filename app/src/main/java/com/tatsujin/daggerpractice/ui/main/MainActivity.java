@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.tatsujin.daggerpractice.BaseActivity;
 import com.tatsujin.daggerpractice.R;
+import com.tatsujin.daggerpractice.ui.main.post.PostsFragment;
 import com.tatsujin.daggerpractice.ui.main.profile.ProfileFragment;
 
 public class MainActivity extends BaseActivity {
@@ -28,7 +29,7 @@ public class MainActivity extends BaseActivity {
 
     private void testFragment(){
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.main_container, new ProfileFragment()).commit();
+                .replace(R.id.main_container, new PostsFragment()).commit();
     }
 
     @Override
